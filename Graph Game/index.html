@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div id="outer_div">
+        <div id="inner_div">
+            <div id="total_money_div">
+                <label>money : </label>
+                <label id="total_money">0</label>
+                <label>원</label>
+            </div>
+            <div id="multiple_div">
+                <label>X</label>
+                <label id="multiple">1.000</label>
+            </div>
+            <div id="input_money_div">
+                <label>넣은 금액 : </label>
+                <label id="input_money">0</label>
+                <label>원</label>
+            </div>
+            <div id="insert_money_div">
+                <label>금액</label>
+                <input id="insert_box" type="number" step="100" min="0" value="500">
+                <button id="input_btn">넣기</button>
+            </div>
+            <div id="start_div">
+                <button id="start_btn">START</button>
+            </div>
+        </div>
+        <div id="inner_div2">
+            <div id="table_div">
+                <table id="result_table" border="1">
+                    <th>회차</th>
+                    <th>최고 배수</th>
+                    <th>당첨 배수</th>
+                    <th>넣은 금액</th>
+                    <th>득/실</th>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>4.532</td>
+                        <td>2.325</td>
+                        <td>500000000</td>
+                        <td>+1320</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

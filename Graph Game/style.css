@@ -1,0 +1,68 @@
+#outer_div{
+    text-align: center;
+}
+#inner_div{
+    width: 450px;
+    text-align: left;
+    display: inline-block;
+}
+#total_money_div{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+}
+#multiple_div{
+    font-size: 130px;
+}
+#input_money_div{
+    margin-top: 10px;
+    font-size: 30px;
+}
+#insert_money_div{
+    font-size: 20px;
+    margin-top: 80px;
+}
+#insert_box{
+    width: 80px;
+    height: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+}
+#input_btn{
+    font-size: 17px;
+}
+#start_div{
+    margin-top: 20px;
+}
+#start_btn{
+    width: 300px;
+    height: 100px;
+    font-size: 80px;
+}
+
+#inner_div2{
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    height: 550px;
+    /* border-width: 0px 0px 0px 2px ;
+    border-style: solid;
+    padding-left: 20px; */
+}
+
+#table_div{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#result_table{
+    width: 600px;
+}
+td{
+    padding-left: 7px;
+}
+th{
+    padding-left: 7px;
+}
