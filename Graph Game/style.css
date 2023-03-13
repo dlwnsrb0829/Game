@@ -5,6 +5,7 @@
     width: 450px;
     text-align: left;
     display: inline-block;
+    margin-right: 30px;
 }
 #total_money_div{
     font-size: 30px;

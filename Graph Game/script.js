@@ -73,7 +73,11 @@ function stop(){
 
 function win(){
     total_money.innerText = parseInt(total_money.innerText) + parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100);
-    win_loss = "+" + parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100).toFixed();
+    if((parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100).toFixed() - parseInt(text_input_money.innerText)) < 0){
+        win_loss = (parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100).toFixed() - parseInt(text_input_money.innerText));
+    }else{
+        win_loss = "+" + (parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100).toFixed() - parseInt(text_input_money.innerText));
+    }
     // alert("넣은 금액 : " + text_input_money.innerText + "원" + "\n최고 배수 : " + rand + "배" + "\n당첨 배수 : " + temp_mul.toFixed(3) + "배" + "\n획득 금액(90%) : " + parseInt((parseInt((parseFloat(text_input_money.innerText) * parseFloat(temp_mul.toFixed(3))).toFixed())) * 90 / 100) + "원")
     table_money = text_input_money.innerText;
     text_input_money.innerText = "0";
